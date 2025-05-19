@@ -1,0 +1,127 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: #005eff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+h1 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #333;
+  font-size: 24px;
+}
+
+h3 {
+  color: #007bff;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+
+input, select, button {
+  width: 100%;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+button {
+  background: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+
+.task-list {
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+}
+
+.column {
+  flex: 1;
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.task-item.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+
+.progress-container {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+progress {
+  width: 100%;
+  height: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+progress::-webkit-progress-value {
+  background-color: #007bff;
+}
+
+progress::-webkit-progress-bar {
+  background-color: #ddd;
+}
+
+.delete-button {
+  background: #e2e2e2;
+  color: white;
+  border: none;
+  padding: 3px 6px; 
+  font-size: 12px; 
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.delete-button:hover {
+  background: #f0f0f0;
+}
+
